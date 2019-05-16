@@ -1,5 +1,10 @@
 import {Component, OnInit} from '@angular/core';
-import data from '../../assets/csvjson.json';
+import {BeastsService} from '../beasts.service';
+import {CreatureRecord} from '../model/CreatureRecord';
+import {FormControl} from '@angular/forms';
+import {Observable} from 'rxjs';
+import {map, startWith} from 'rxjs/operators';
+
 
 @Component({
   selector: 'app-beast-list',
@@ -8,13 +13,36 @@ import data from '../../assets/csvjson.json';
 })
 export class BeastListComponent implements OnInit {
 
-  public beastList;
+  private beastList: CreatureRecord[];
+  public filteredBeastList: CreatureRecord[];
+  public searchControl: FormControl = new FormControl('');
+  filteredOptions: Observable<string[]>;
+  options: string[] = [];
 
-  constructor() {
+  constructor(private beastsService: BeastsService) {
+    this.searchControl.valueChanges.subscribe(value => {
+      this.filteredBeastList = this.beastList.filter(b => b.get('Race').toLowerCase().includes(value.toLowerCase()));
+    });
   }
 
   ngOnInit() {
-    this.beastList = data;
+    this.beastsService.getAll().then(creatures => {
+      this.beastList = creatures;
+      this.filteredBeastList = [...this.beastList];
+      for (const beast of this.beastList) {
+        this.options.push(beast.Race);
+      }
+      this.filteredOptions = this.searchControl.valueChanges
+        .pipe(
+          startWith(''),
+          map(value => this._filter(value))
+        );
+    });
   }
 
+  private _filter(value: string): string[] {
+    const filterValue = value.toLowerCase();
+
+    return this.options.filter(option => option.toLowerCase().includes(filterValue));
+  }
 }
