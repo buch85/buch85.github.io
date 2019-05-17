@@ -14,25 +14,16 @@ import {map, startWith} from 'rxjs/operators';
 export class BeastListComponent implements OnInit {
 
   private beastList: CreatureRecord[];
-  public filteredBeastList: CreatureRecord[];
+  public filteredBeastList: Observable<CreatureRecord[]>;
   public searchControl: FormControl = new FormControl('');
-  filteredOptions: Observable<string[]>;
-  options: string[] = [];
 
   constructor(private beastsService: BeastsService) {
-    this.searchControl.valueChanges.subscribe(value => {
-      this.filteredBeastList = this.beastList.filter(b => b.get('Race').toLowerCase().includes(value.toLowerCase()));
-    });
   }
 
   ngOnInit() {
     this.beastsService.getAll().then(creatures => {
       this.beastList = creatures;
-      this.filteredBeastList = [...this.beastList];
-      for (const beast of this.beastList) {
-        this.options.push(beast.Race);
-      }
-      this.filteredOptions = this.searchControl.valueChanges
+      this.filteredBeastList = this.searchControl.valueChanges
         .pipe(
           startWith(''),
           map(value => this._filter(value))
@@ -40,9 +31,9 @@ export class BeastListComponent implements OnInit {
     });
   }
 
-  private _filter(value: string): string[] {
+  private _filter(value: string): CreatureRecord[] {
     const filterValue = value.toLowerCase();
 
-    return this.options.filter(option => option.toLowerCase().includes(filterValue));
+    return this.beastList.filter(option => option.Race.toLowerCase().includes(filterValue));
   }
 }

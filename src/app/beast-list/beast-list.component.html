@@ -2,13 +2,13 @@
   <input type="text" matInput [formControl]="searchControl" [matAutocomplete]="auto" placeholder="Search">
 </mat-form-field>
 <mat-autocomplete #auto="matAutocomplete">
-  <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
-    {{option}}
+  <mat-option *ngFor="let option of filteredBeastList | async" [value]="option['Race']">
+    {{option['Race']}}
   </mat-option>
 </mat-autocomplete>
 <mat-accordion>
   <mat-action-list>
-    <mat-expansion-panel *ngFor="let beast of filteredBeastList">
+    <mat-expansion-panel *ngFor="let beast of filteredBeastList| async">
       <mat-expansion-panel-header>
         <mat-panel-title>
           {{beast['Race']}}
