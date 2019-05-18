@@ -21,7 +21,10 @@ export class BeastListComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.monstersService.getMonsters((c: MonsterRecord) => true).then(creatures => {
+    this.monstersService.getMonsters((c: MonsterRecord) => {
+      const lowerCaseType = c.type.toLowerCase();
+      return lowerCaseType.includes('animal') || lowerCaseType.includes('magical beast') || lowerCaseType.includes('elemental');
+    }).then(creatures => {
       this.monsterList = creatures;
       this.filteredMonsterList = this.searchControl.valueChanges
         .pipe(
