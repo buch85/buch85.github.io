@@ -13,17 +13,17 @@ import {MonsterRecord} from '../model/MonsterRecord';
 })
 export class BeastListComponent implements OnInit {
 
-  private beastList: MonsterRecord[];
-  public filteredBeastList: Observable<MonsterRecord[]>;
+  private monsterList: MonsterRecord[];
+  public filteredMonsterList: Observable<MonsterRecord[]>;
   public searchControl: FormControl = new FormControl('');
 
-  constructor(private beastsService: BeastsService) {
+  constructor(private monstersService: MonstersService) {
   }
 
   ngOnInit() {
-    this.monstersService.getMonsters((c: MonsterRecord) => c.type === 'Animal' || c.type === 'Magical Beast').then(creatures => {
-      this.beastList = creatures;
-      this.filteredBeastList = this.searchControl.valueChanges
+    this.monstersService.getMonsters((c: MonsterRecord) => true).then(creatures => {
+      this.monsterList = creatures;
+      this.filteredMonsterList = this.searchControl.valueChanges
         .pipe(
           startWith(''),
           map(value => this._filter(value))
@@ -34,6 +34,6 @@ export class BeastListComponent implements OnInit {
   private _filter(value: string): MonsterRecord[] {
     const filterValue = value.toLowerCase();
 
-    return this.beastList.filter(option => option.name.toLowerCase().includes(filterValue));
+    return this.monsterList.filter(option => option.name.toLowerCase().includes(filterValue));
   }
 }
