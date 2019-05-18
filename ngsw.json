@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1558022524036,
+  "timestamp": 1558199853558,
   "index": "https://buch85.github.io/druid-buddies/index.html",
   "assetGroups": [
     {
@@ -8,10 +8,10 @@
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "urls": [
-        "https://buch85.github.io/druid-buddies/es2015-polyfills.1e04665e16f944715fd2.js",
+        "https://buch85.github.io/druid-buddies/es2015-polyfills.c5dd28b362270c767b34.js",
         "https://buch85.github.io/druid-buddies/favicon.ico",
         "https://buch85.github.io/druid-buddies/index.html",
-        "https://buch85.github.io/druid-buddies/main.bc55e72ef25083561f62.js",
+        "https://buch85.github.io/druid-buddies/main.c239f7e98e983bf85539.js",
         "https://buch85.github.io/druid-buddies/polyfills.8bbb231b43165d65d357.js",
         "https://buch85.github.io/druid-buddies/runtime.26209474bfa8dc87a77c.js",
         "https://buch85.github.io/druid-buddies/styles.edbcf20f5eee112dd536.css"
@@ -23,7 +23,6 @@
       "installMode": "lazy",
       "updateMode": "prefetch",
       "urls": [
-        "https://buch85.github.io/druid-buddies/assets/csvjson.json",
         "https://buch85.github.io/druid-buddies/assets/icons/icon-128x128.png",
         "https://buch85.github.io/druid-buddies/assets/icons/icon-144x144.png",
         "https://buch85.github.io/druid-buddies/assets/icons/icon-152x152.png",
@@ -31,14 +30,14 @@
         "https://buch85.github.io/druid-buddies/assets/icons/icon-384x384.png",
         "https://buch85.github.io/druid-buddies/assets/icons/icon-512x512.png",
         "https://buch85.github.io/druid-buddies/assets/icons/icon-72x72.png",
-        "https://buch85.github.io/druid-buddies/assets/icons/icon-96x96.png"
+        "https://buch85.github.io/druid-buddies/assets/icons/icon-96x96.png",
+        "https://buch85.github.io/druid-buddies/assets/monster.json"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "https://buch85.github.io/druid-buddies/assets/csvjson.json": "a6e408c1fd74a42e86421aaefd60ae485576a1bf",
     "https://buch85.github.io/druid-buddies/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "https://buch85.github.io/druid-buddies/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
     "https://buch85.github.io/druid-buddies/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
@@ -47,10 +46,11 @@
     "https://buch85.github.io/druid-buddies/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
     "https://buch85.github.io/druid-buddies/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "https://buch85.github.io/druid-buddies/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
-    "https://buch85.github.io/druid-buddies/es2015-polyfills.1e04665e16f944715fd2.js": "b7a81c61d32b0b12737f0c13f45973ba391cd7f9",
+    "https://buch85.github.io/druid-buddies/assets/monster.json": "69e56c02556fa092d3a58be5a2ff8fa474ab7063",
+    "https://buch85.github.io/druid-buddies/es2015-polyfills.c5dd28b362270c767b34.js": "b7a81c61d32b0b12737f0c13f45973ba391cd7f9",
     "https://buch85.github.io/druid-buddies/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "https://buch85.github.io/druid-buddies/index.html": "3fc3a5de44bafaae3c5d2e1c032cc8cd1d02a8de",
-    "https://buch85.github.io/druid-buddies/main.bc55e72ef25083561f62.js": "402f14285a618ffe80dc112de742943123821273",
+    "https://buch85.github.io/druid-buddies/index.html": "0868081458f745813db98bb2f7d25fb244e85110",
+    "https://buch85.github.io/druid-buddies/main.c239f7e98e983bf85539.js": "82c7898c7ac50af141495db0b0e01dd9db445373",
     "https://buch85.github.io/druid-buddies/polyfills.8bbb231b43165d65d357.js": "ffa449995bf2eba2ccd0a002417214f7eb75e7b5",
     "https://buch85.github.io/druid-buddies/runtime.26209474bfa8dc87a77c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
     "https://buch85.github.io/druid-buddies/styles.edbcf20f5eee112dd536.css": "cf178f57a2117e87e9f03802553eca9ffeb0a42b"
