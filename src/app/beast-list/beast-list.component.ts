@@ -1,9 +1,9 @@
 import {Component, OnInit} from '@angular/core';
-import {BeastsService} from '../beasts.service';
-import {CreatureRecord} from '../model/CreatureRecord';
+import {MonstersService} from '../monsters.service';
 import {FormControl} from '@angular/forms';
 import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
+import {MonsterRecord} from '../model/MonsterRecord';
 
 
 @Component({
@@ -13,15 +13,15 @@ import {map, startWith} from 'rxjs/operators';
 })
 export class BeastListComponent implements OnInit {
 
-  private beastList: CreatureRecord[];
-  public filteredBeastList: Observable<CreatureRecord[]>;
+  private beastList: MonsterRecord[];
+  public filteredBeastList: Observable<MonsterRecord[]>;
   public searchControl: FormControl = new FormControl('');
 
   constructor(private beastsService: BeastsService) {
   }
 
   ngOnInit() {
-    this.beastsService.getAll().then(creatures => {
+    this.monstersService.getMonsters((c: MonsterRecord) => c.type === 'Animal' || c.type === 'Magical Beast').then(creatures => {
       this.beastList = creatures;
       this.filteredBeastList = this.searchControl.valueChanges
         .pipe(
@@ -31,9 +31,9 @@ export class BeastListComponent implements OnInit {
     });
   }
 
-  private _filter(value: string): CreatureRecord[] {
+  private _filter(value: string): MonsterRecord[] {
     const filterValue = value.toLowerCase();
 
-    return this.beastList.filter(option => option.Race.toLowerCase().includes(filterValue));
+    return this.beastList.filter(option => option.name.toLowerCase().includes(filterValue));
   }
 }

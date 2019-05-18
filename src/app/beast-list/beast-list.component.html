@@ -11,42 +11,40 @@
     <mat-expansion-panel *ngFor="let beast of filteredBeastList| async">
       <mat-expansion-panel-header>
         <mat-panel-title>
-          {{beast['Race']}}
+          {{beast['name']}}
         </mat-panel-title>
         <mat-panel-description>
-          {{beast['Size']}}
-          {{beast['Type']}}
-          {{beast['HD']}}HD
+          {{beast['size']}} - {{beast['type']}} - {{beast['hit_dice']}}
         </mat-panel-description>
       </mat-expansion-panel-header>
       <ng-template matExpansionPanelContent>
-        <p *ngIf="beast['Natural Armor']">Natural Armor: {{beast['Natural Armor']}}</p>
-        <p *ngIf="beast['Natural Attacks']">Natural Attacks: {{beast.getNaturalAttacks()}}</p>
-        <p *ngIf="beast['Special Attacks']">Special Attacks: {{beast['Special Attacks']}}</p>
-        <p *ngIf="beast['Spell-like abilities']">Spell-like abilities: {{beast['Spell-like abilities']}}</p>
-        <p *ngIf="beast['Other Special Abilities']">Other Special Abilities: {{beast['Other Special Abilities']}}</p>
-        <p *ngIf="beast['LowLight Vision']">LowLight Vision: {{beast['LowLight Vision']}}</p>
-        <p *ngIf="beast['Darkvision']">Darkvision: {{beast['Darkvision']}}</p>
-        <p *ngIf="beast['Other Senses']">Other Senses: {{beast['Other Senses']}}</p>
-        <p *ngIf="beast['Immunities']">Immunities: {{beast['Immunities']}}</p>
-        <p *ngIf="beast['Vulnerabilities']">Vulnerabilities: {{beast['Vulnerabilities']}}</p>
-        <p *ngIf="beast['Energy Resistance']">Energy Resistance: {{beast['Energy Resistance']}}</p>
-        <p *ngIf="beast['Spell Resistance']">Spell Resistance: {{beast['Spell Resistance']}}</p>
-        <p *ngIf="beast['Damage Reduction']">Damage Reduction: {{beast['Damage Reduction']}}</p>
-        <p *ngIf="beast['Fast Healing']">Fast Healing: {{beast['Fast Healing']}}</p>
-        <p *ngIf="beast['Bonus Essentia']">Bonus Essentia: {{beast['Bonus Essentia']}}</p>
-        <p *ngIf="beast['Other Special Qualities']">Other Special Qualities: {{beast['Other Special Qualities']}}</p>
-        <p *ngIf="beast['Str']">Str: {{beast['Str']}}</p>
-        <p *ngIf="beast['Dex']">Dex: {{beast['Dex']}}</p>
-        <p *ngIf="beast['Con']">Con: {{beast['Con']}}</p>
-        <p *ngIf="beast['Int']">Int: {{beast['Int']}}</p>
-        <p *ngIf="beast['Wis']">Wis: {{beast['Wis']}}</p>
-        <p *ngIf="beast['Cha']">Cha: {{beast['Cha']}}</p>
-        <p *ngIf="beast['Racial Skills']">Racial Skills: {{beast['Racial Skills']}}</p>
-        <p *ngIf="beast['Bonus Feat(s)']">Bonus Feat(s): {{beast['Bonus Feat(s)']}}</p>
-        <p *ngIf="beast['Src']">Src: {{beast['Src']}}</p>
-        <p *ngIf="beast['Pg']">Pg: {{beast['Pg']}}</p>
-        <p *ngIf="beast['AltSrc']">AltSrc: {{beast['AltSrc']}}</p>
+        <p *ngIf="beast['family']">family: {{beast['family']}}</p>
+        <p *ngIf="beast['name']">name: {{beast['name']}}</p>
+        <p *ngIf="beast['size']">size: {{beast['size']}}</p>
+        <p *ngIf="beast['type']">type: {{beast['type']}}</p>
+        <p *ngIf="beast['descriptor']">descriptor: {{beast['descriptor']}}</p>
+        <p *ngIf="beast['hit_dice']">hit_dice: {{beast['hit_dice']}}</p>
+        <p *ngIf="beast['initiative']">initiative: {{beast['initiative']}}</p>
+        <p *ngIf="beast['speed']">speed: {{beast['speed']}}</p>
+        <p *ngIf="beast['armor_class']">armor_class: {{beast['armor_class']}}</p>
+        <p *ngIf="beast['base_attack']">base_attack: {{beast['base_attack']}}</p>
+        <p *ngIf="beast['grapple']">grapple: {{beast['grapple']}}</p>
+        <p *ngIf="beast['attack']">attack: {{beast['attack']}}</p>
+        <p *ngIf="beast['full_attack']">full_attack: {{beast['full_attack']}}</p>
+        <p *ngIf="beast['space']">space: {{beast['space']}}</p>
+        <p *ngIf="beast['reach']">reach: {{beast['reach']}}</p>
+        <p *ngIf="beast['special_attacks']">special_attacks: {{beast['special_attacks']}}</p>
+        <p *ngIf="beast['special_qualities']">special_qualities: {{beast['special_qualities']}}</p>
+        <p *ngIf="beast['skills']">skills: {{beast['skills']}}</p>
+        <p *ngIf="beast['feats']">feats: {{beast['feats']}}</p>
+        <p *ngIf="beast['epic_feats']">epic_feats: {{beast['epic_feats']}}</p>
+        <p *ngIf="beast['saves']">saves: {{beast['saves']}}</p>
+        <p *ngIf="beast['abilities']">abilities: {{beast['abilities']}}</p>
+        <p *ngIf="beast['environment']">environment: {{beast['environment']}}</p>
+        <p *ngIf="beast['organization']">organization: {{beast['organization']}}</p>
+        <p *ngIf="beast['challenge_rating']">challenge_rating: {{beast['challenge_rating']}}</p>
+        <p *ngIf="beast['treasure']">treasure: {{beast['treasure']}}</p>
+        <p *ngIf="beast['alignment']">alignment: {{beast['alignment']}}</p>
       </ng-template>
     </mat-expansion-panel>
   </mat-action-list>

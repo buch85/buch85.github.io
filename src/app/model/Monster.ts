@@ -1,0 +1,65 @@
+export interface Monster {
+  family: string;
+  name: string;
+  size: string;
+  type: string;
+  descriptor: string;
+  hit_dice: string;
+  initiative: string;
+  speed: string;
+  armor_class: string;
+  base_attack: string;
+  grapple: string;
+  attack: string;
+  full_attack: string;
+  space: string;
+  reach: string;
+  special_attacks: string;
+  special_qualities: string;
+  skills: string;
+  feats: string;
+  epic_feats: string;
+  saves: string;
+  abilities: string;
+  environment: string;
+  organization: string;
+  challenge_rating: string;
+  treasure: string;
+  alignment: string;
+  advancement: string;
+  special_abilities: string;
+  reference: string;
+}
+
+export const emptyMonster: Monster = {
+  abilities: '',
+  advancement: '',
+  alignment: '',
+  armor_class: '',
+  attack: '',
+  base_attack: '',
+  challenge_rating: '',
+  descriptor: '',
+  environment: '',
+  epic_feats: '',
+  family: '',
+  feats: '',
+  full_attack: '',
+  grapple: '',
+  hit_dice: '',
+  initiative: '',
+  name: '',
+  organization: '',
+  reach: '',
+  reference: '',
+  saves: '',
+  size: '',
+  skills: '',
+  space: '',
+  special_abilities: '',
+  special_attacks: '',
+  special_qualities: '',
+  speed: '',
+  treasure: '',
+  type: ''
+};
