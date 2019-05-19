@@ -39,4 +39,10 @@ export class BeastListComponent implements OnInit {
 
     return this.monsterList.filter(option => option.name.toLowerCase().includes(filterValue));
   }
+
+  loadFulltext(beast: MonsterRecord) {
+    this.monstersService.getMonsterFullText(beast.get('id')).then(text => {
+      beast.setFulltext(text);
+    }).catch();
+  }
 }

@@ -8,7 +8,7 @@
 </mat-autocomplete>
 <mat-accordion>
   <mat-action-list>
-    <mat-expansion-panel *ngFor="let beast of filteredMonsterList| async">
+    <mat-expansion-panel *ngFor="let beast of filteredMonsterList| async" >
       <mat-expansion-panel-header>
         <mat-panel-title>
           {{beast['name']}}
@@ -45,6 +45,10 @@
         <p *ngIf="beast['challenge_rating']">challenge_rating: {{beast['challenge_rating']}}</p>
         <p *ngIf="beast['treasure']">treasure: {{beast['treasure']}}</p>
         <p *ngIf="beast['alignment']">alignment: {{beast['alignment']}}</p>
+        <div>
+          <button mat-button (click)="loadFulltext(beast)">Show full text</button>
+          <div [innerHTML]="beast.getFulltext()"></div>
+        </div>
       </ng-template>
     </mat-expansion-panel>
   </mat-action-list>

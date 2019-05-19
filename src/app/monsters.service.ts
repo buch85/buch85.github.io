@@ -13,9 +13,15 @@ export class MonstersService {
   }
 
   public getMonsters(filter: (c: MonsterRecord) => boolean): Promise<MonsterRecord[]> {
-    return this.httpClient.get<Monster[]>('assets/monster.json').toPromise().then(creatures => {
+    return this.httpClient.get<Monster[]>('assets/monsters.json').toPromise().then(creatures => {
       return creatures.map(creature => new MonsterRecord(creature)).filter(filter);
     });
+  }
+
+  public getMonsterFullText(id: string): Promise<string> {
+    return this.httpClient.get('assets/monstersFullText/' + id + '.html', {
+      responseType: 'text'
+    }).toPromise();
   }
 
 }

@@ -1,4 +1,5 @@
 export interface Monster {
+  id: string;
   family: string;
   name: string;
   size: string;
@@ -32,6 +33,7 @@ export interface Monster {
 }
 
 export const emptyMonster: Monster = {
+  id: '',
   abilities: '',
   advancement: '',
   alignment: '',
