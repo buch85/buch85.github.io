@@ -15,17 +15,30 @@ import {
   MatIconModule,
   MatInputModule,
   MatListModule,
-  MatSelectModule
+  MatSelectModule,
+  MatToolbarModule,
+  MatButtonModule,
+  MatSidenavModule,
+  MatTableModule,
+  MatPaginatorModule,
+  MatSortModule,
+  MatGridListModule,
+  MatMenuModule
 } from '@angular/material';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import {MynavComponent} from './mynav/mynav.component';
+import {LayoutModule} from '@angular/cdk/layout';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BeastListComponent
+    BeastListComponent,
+    MynavComponent
   ],
   imports: [
+    FlexLayoutModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
@@ -40,7 +53,16 @@ import {HttpClientModule} from '@angular/common/http';
     ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production}),
     MatInputModule,
     MatAutocompleteModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatGridListModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

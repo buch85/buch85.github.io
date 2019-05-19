@@ -41,8 +41,10 @@ export class BeastListComponent implements OnInit {
   }
 
   loadFulltext(beast: MonsterRecord) {
-    this.monstersService.getMonsterFullText(beast.get('id')).then(text => {
-      beast.setFulltext(text);
-    }).catch();
+    if (!beast.getFulltext()) {
+      this.monstersService.getMonsterFullText(beast.get('id')).then(text => {
+        beast.setFulltext(text);
+      }).catch();
+    }
   }
 }
