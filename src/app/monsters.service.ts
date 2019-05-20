@@ -26,8 +26,7 @@ export class MonstersService {
 
   public getMonsters(filter: (c: MonsterRecord) => boolean): Promise<MonsterRecord[]> {
 
-    const monstersObservable = this.getMonstersObservable();
-    return monstersObservable.then(creatures => {
+    return this.getMonstersObservable().then(creatures => {
       return creatures.filter(filter);
     });
   }
@@ -39,7 +38,7 @@ export class MonstersService {
         resolve(this.allMonsters);
       });
     } else {
-      return this.httpClient.get<Monster[]>('assets/monsters.json').toPromise().then(creatures => {
+      return this.httpClient.get<Monster[]>('assets/beasts.json').toPromise().then(creatures => {
           const monsterRecords = creatures.map(creature => new MonsterRecord(creature));
           this.allMonsters = monsterRecords;
           return monsterRecords;
