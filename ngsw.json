@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1558370553886,
+  "timestamp": 1558371809667,
   "index": "https://buch85.github.io/druid-buddies/index.html",
   "assetGroups": [
     {
@@ -11,7 +11,7 @@
         "https://buch85.github.io/druid-buddies/es2015-polyfills.1e04665e16f944715fd2.js",
         "https://buch85.github.io/druid-buddies/favicon.ico",
         "https://buch85.github.io/druid-buddies/index.html",
-        "https://buch85.github.io/druid-buddies/main.0371b251d10b4d0d3a0f.js",
+        "https://buch85.github.io/druid-buddies/main.a39626f853590ad677db.js",
         "https://buch85.github.io/druid-buddies/polyfills.8bbb231b43165d65d357.js",
         "https://buch85.github.io/druid-buddies/runtime.26209474bfa8dc87a77c.js",
         "https://buch85.github.io/druid-buddies/styles.edbcf20f5eee112dd536.css"
@@ -23,6 +23,8 @@
       "installMode": "lazy",
       "updateMode": "prefetch",
       "urls": [
+        "https://buch85.github.io/druid-buddies/assets/allMonsters.json",
+        "https://buch85.github.io/druid-buddies/assets/beasts.json",
         "https://buch85.github.io/druid-buddies/assets/icons/icon-128x128.png",
         "https://buch85.github.io/druid-buddies/assets/icons/icon-144x144.png",
         "https://buch85.github.io/druid-buddies/assets/icons/icon-152x152.png",
@@ -32,7 +34,6 @@
         "https://buch85.github.io/druid-buddies/assets/icons/icon-72x72.png",
         "https://buch85.github.io/druid-buddies/assets/icons/icon-96x96.png",
         "https://buch85.github.io/druid-buddies/assets/monster.json.bak",
-        "https://buch85.github.io/druid-buddies/assets/monsters.json",
         "https://buch85.github.io/druid-buddies/assets/monstersFullText/1st_Level_Astral_Construct.html",
         "https://buch85.github.io/druid-buddies/assets/monstersFullText/2nd_Level_Astral_Construct.html",
         "https://buch85.github.io/druid-buddies/assets/monstersFullText/3rd_Level_Astral_Construct.html",
@@ -720,6 +721,8 @@
   ],
   "dataGroups": [],
   "hashTable": {
+    "https://buch85.github.io/druid-buddies/assets/allMonsters.json": "c175cac3b2f986570b7489f9396e6ef992b94371",
+    "https://buch85.github.io/druid-buddies/assets/beasts.json": "3118ed24218ecefcc42ded1a8c85e27c9222319f",
     "https://buch85.github.io/druid-buddies/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "https://buch85.github.io/druid-buddies/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
     "https://buch85.github.io/druid-buddies/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
@@ -729,7 +732,6 @@
     "https://buch85.github.io/druid-buddies/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "https://buch85.github.io/druid-buddies/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "https://buch85.github.io/druid-buddies/assets/monster.json.bak": "69e56c02556fa092d3a58be5a2ff8fa474ab7063",
-    "https://buch85.github.io/druid-buddies/assets/monsters.json": "c175cac3b2f986570b7489f9396e6ef992b94371",
     "https://buch85.github.io/druid-buddies/assets/monstersFullText/1st_Level_Astral_Construct.html": "82a4e525247eb31a684664362ed59af5ec8a7ab7",
     "https://buch85.github.io/druid-buddies/assets/monstersFullText/2nd_Level_Astral_Construct.html": "203634633752ce0d8691294947724049f4c8f7e5",
     "https://buch85.github.io/druid-buddies/assets/monstersFullText/3rd_Level_Astral_Construct.html": "b395cddd9240ccfd6327394fc7e529682bcd7a14",
@@ -1413,8 +1415,8 @@
     "https://buch85.github.io/druid-buddies/assets/monstersFullText/Zelekhut.html": "d1e20eaeb7e8114fcdf8fad234ef5a668778ec49",
     "https://buch85.github.io/druid-buddies/es2015-polyfills.1e04665e16f944715fd2.js": "b7a81c61d32b0b12737f0c13f45973ba391cd7f9",
     "https://buch85.github.io/druid-buddies/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "https://buch85.github.io/druid-buddies/index.html": "aefdf6a7d5d9d092f7caea32f26ce298bfea8796",
-    "https://buch85.github.io/druid-buddies/main.0371b251d10b4d0d3a0f.js": "cc5259b1610005b02f9e0c91c4bb4df89daa5ba2",
+    "https://buch85.github.io/druid-buddies/index.html": "b76f9dbcbfe706b5c76d713d58507b066c5f5c93",
+    "https://buch85.github.io/druid-buddies/main.a39626f853590ad677db.js": "3463d975a4307c885892849da731eaf1e33cc5e5",
     "https://buch85.github.io/druid-buddies/polyfills.8bbb231b43165d65d357.js": "ffa449995bf2eba2ccd0a002417214f7eb75e7b5",
     "https://buch85.github.io/druid-buddies/runtime.26209474bfa8dc87a77c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
     "https://buch85.github.io/druid-buddies/styles.edbcf20f5eee112dd536.css": "cf178f57a2117e87e9f03802553eca9ffeb0a42b"
