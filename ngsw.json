@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1558366826548,
+  "timestamp": 1558370553886,
   "index": "https://buch85.github.io/druid-buddies/index.html",
   "assetGroups": [
     {
@@ -11,7 +11,7 @@
         "https://buch85.github.io/druid-buddies/es2015-polyfills.1e04665e16f944715fd2.js",
         "https://buch85.github.io/druid-buddies/favicon.ico",
         "https://buch85.github.io/druid-buddies/index.html",
-        "https://buch85.github.io/druid-buddies/main.4cd95242cb0f602ce959.js",
+        "https://buch85.github.io/druid-buddies/main.0371b251d10b4d0d3a0f.js",
         "https://buch85.github.io/druid-buddies/polyfills.8bbb231b43165d65d357.js",
         "https://buch85.github.io/druid-buddies/runtime.26209474bfa8dc87a77c.js",
         "https://buch85.github.io/druid-buddies/styles.edbcf20f5eee112dd536.css"
@@ -1413,8 +1413,8 @@
     "https://buch85.github.io/druid-buddies/assets/monstersFullText/Zelekhut.html": "d1e20eaeb7e8114fcdf8fad234ef5a668778ec49",
     "https://buch85.github.io/druid-buddies/es2015-polyfills.1e04665e16f944715fd2.js": "b7a81c61d32b0b12737f0c13f45973ba391cd7f9",
     "https://buch85.github.io/druid-buddies/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "https://buch85.github.io/druid-buddies/index.html": "5d41c835b67d98dd051b0e78cebe7fd9d7c51385",
-    "https://buch85.github.io/druid-buddies/main.4cd95242cb0f602ce959.js": "2e386a2bdf6f6c496f40790a6d0ef01be4eecc60",
+    "https://buch85.github.io/druid-buddies/index.html": "aefdf6a7d5d9d092f7caea32f26ce298bfea8796",
+    "https://buch85.github.io/druid-buddies/main.0371b251d10b4d0d3a0f.js": "cc5259b1610005b02f9e0c91c4bb4df89daa5ba2",
     "https://buch85.github.io/druid-buddies/polyfills.8bbb231b43165d65d357.js": "ffa449995bf2eba2ccd0a002417214f7eb75e7b5",
     "https://buch85.github.io/druid-buddies/runtime.26209474bfa8dc87a77c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
     "https://buch85.github.io/druid-buddies/styles.edbcf20f5eee112dd536.css": "cf178f57a2117e87e9f03802553eca9ffeb0a42b"

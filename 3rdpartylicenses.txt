@@ -112,6 +112,8 @@ THE SOFTWARE.
 
 @angular/material/button
 
+@angular/material/card
+
 @angular/material/core
 
 @angular/material/expansion
@@ -121,6 +123,8 @@ THE SOFTWARE.
 @angular/material/icon
 
 @angular/material/list
+
+@angular/material/menu
 
 @angular/material/sidenav
 
