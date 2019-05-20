@@ -9,33 +9,35 @@ import {BeastListComponent} from './beast-list/beast-list.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
   MatAutocompleteModule,
+  MatButtonModule,
   MatCardModule,
   MatExpansionModule,
   MatFormFieldModule,
+  MatGridListModule,
   MatIconModule,
   MatInputModule,
   MatListModule,
-  MatSelectModule,
-  MatToolbarModule,
-  MatButtonModule,
-  MatSidenavModule,
-  MatTableModule,
+  MatMenuModule,
   MatPaginatorModule,
+  MatSelectModule,
+  MatSidenavModule,
   MatSortModule,
-  MatGridListModule,
-  MatMenuModule
+  MatTableModule,
+  MatToolbarModule
 } from '@angular/material';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {MynavComponent} from './mynav/mynav.component';
 import {LayoutModule} from '@angular/cdk/layout';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import {MydashboardComponent} from './mydashboard/mydashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BeastListComponent,
-    MynavComponent
+    MynavComponent,
+    MydashboardComponent
   ],
   imports: [
     FlexLayoutModule,

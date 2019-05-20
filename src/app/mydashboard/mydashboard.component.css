@@ -1,0 +1,16 @@
+.grid-container {
+  margin: 20px;
+}
+
+.dashboard-card {
+  margin: 20px;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+}

@@ -40,11 +40,13 @@ export class BeastListComponent implements OnInit {
     return this.monsterList.filter(option => option.name.toLowerCase().includes(filterValue));
   }
 
+  addToDashboard(event: Event, beast: MonsterRecord) {
+    event.stopPropagation();
+    this.monstersService.addToDashboard(beast);
+  }
+
   loadFulltext(beast: MonsterRecord) {
-    if (!beast.getFulltext()) {
-      this.monstersService.getMonsterFullText(beast.get('id')).then(text => {
-        beast.setFulltext(text);
-      }).catch();
-    }
+    this.monstersService.loadFullText(beast);
+
   }
 }

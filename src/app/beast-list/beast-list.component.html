@@ -14,7 +14,9 @@
           {{beast['name']}}
         </mat-panel-title>
         <mat-panel-description>
-          {{beast['size']}} - {{beast['type']}} - {{beast['hit_dice']}}
+          <button mat-icon-button type="button" (click)="addToDashboard($event,beast)">
+            <mat-icon>add</mat-icon>
+          </button>
         </mat-panel-description>
       </mat-expansion-panel-header>
       <ng-template matExpansionPanelContent>

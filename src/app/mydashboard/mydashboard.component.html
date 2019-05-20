@@ -1,0 +1,27 @@
+<div class="grid-container">
+  <h1 class="mat-h1">Dashboard</h1>
+  <mat-card class="dashboard-card" *ngFor="let monster of monsters; let index=index ">
+    <mat-card-header>
+      <mat-card-title>
+        {{monster.get('name')}}
+        <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" xPosition="before">
+          <button mat-menu-item (click)="removeFromDashboard(index)">Remove</button>
+        </mat-menu>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="dashboard-card-content">
+      <div>Hit dice: {{monster.get('hit_dice')}}</div>
+      <div>Initiative:{{monster.get('initiative')}}</div>
+      <div>Speed: {{monster.get('speed')}}</div>
+      <div>AC: {{monster.get('armor_class')}}</div>
+      <div>Base attack: {{monster.get('base_attack')}}</div>
+      <div>Attack: {{monster.get('attack')}}</div>
+      <div>Full Attack: {{monster.get('full_attack')}}</div>
+      <div>Space/Reach: {{monster.get('space')}}</div>
+      <div>Saves: {{monster.get('saves')}}</div>
+    </mat-card-content>
+  </mat-card>
+</div>
